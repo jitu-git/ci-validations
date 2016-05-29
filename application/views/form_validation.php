@@ -1,3 +1,4 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');?>
 <!DOCTYPE html>
 <html>
 
@@ -18,7 +19,7 @@
 
 <header>
     <h1>Minmarks Codes : Tutorials for codeigniter form validation </h1>
-    <a href="http://tutorialzine.com/2015/07/freebie-7-clean-and-responsive-forms/">Download</a>
+    <a href="https://github.com/jitu-git/ci-validations">Download</a>
 </header>
 
 <ul>
