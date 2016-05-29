@@ -10,8 +10,8 @@
 
     <title><?php echo $title; ?></title>
 
-    <link rel="stylesheet" href="<?php echo base_url('assets/demo.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/form-basic.css') ?>">
+    <link rel="stylesheet" href="<?php echo ('http://www.minmarks.com/demo/codeigniter-validation/assets/demo.css') ?>">
+    <link rel="stylesheet" href="<?php echo ('http://www.minmarks.com/demo/codeigniter-validation/assets/form-basic.css') ?>">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 </head>
@@ -28,6 +28,8 @@
 
 
 <div class="main-content">
+    <?php echo validation_errors(); ?>
+
     <form class="form-basic" method="post" action="#">
 
         <div class="form-title-row">
