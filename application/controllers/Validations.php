@@ -9,13 +9,16 @@ class Validations extends CI_Controller {
         parent::__construct();
         $this->load->helper(array("form","url"));
         $this->load->library('form_validation');
-        $this->validation_rules();
-        if ($this->form_validation->run() == FALSE){
-            $this->pageData["from_status"] = "Form successfully validated";
-        }
     }
 
     public function index(){
+        
+        if($this->input->post()){
+         $this->validation_rules();
+            if ($this->form_validation->run() == FALSE){
+                $this->pageData["from_status"] = "Form successfully validated";
+            }
+        }
         $this->pageData["title"] = "CI form validations";
         $this->load->view("form_validation",$this->pageData);
     }
