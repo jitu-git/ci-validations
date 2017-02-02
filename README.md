@@ -24,4 +24,4 @@ Run validations rule by
         }
 To show the errors, there are a default function by codeigniter `validation_errors()` . Call this function in your view file.
 
-[View Live Demo](http://minmarks.com/demo/codeigniter-validation)
+[View Live Demo](https://www.maxmarks.in/demo/codeigniter-validation)
